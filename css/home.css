@@ -18,9 +18,11 @@ h1 {
 }
 
 h2 {
+	padding: 5% 0% 0% 5%;
 	height: fit-content;
+	font-size: 2em;
+	color: #595a5b;
 }
-
 
 .header {
 	color: white;
