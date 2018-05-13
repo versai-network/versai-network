@@ -69,6 +69,26 @@ html, body {
 	margin-bottom: -52px; 
 }
 
+/*Scroll Bars are ugly*/
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#parent{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#child{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+}
+
 
 .main {
 	color: white;
