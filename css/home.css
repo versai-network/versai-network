@@ -119,6 +119,7 @@ html, body {
 	display: flex;
 	flex-wrap: wrap;
 	overflow: hidden;
+	border-radius: 25px;
 }
 
 a {
