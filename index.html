@@ -1,288 +1,90 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en" style="max-width:100%;overflow-x:hidden;">
+<head>
 <title>Versai Network</title>
-<meta charset=utf-8>
-<meta content="Versai Network. Free to win practice server 1.2 Minecraft Bedrock." name=description>
-<meta content="Versai, Versai.pro, Minecraft Server, Minecraft, Fun, Play, Info, Website, Official, PvP, Hardcore, Practice, 1.2, Pocket, Bedrock" name=keywords>
-<meta content="width=device-width,initial-scale=1" name=viewport>
-<meta content="The best practice server for Minecraft BE 1.2" name=twitter:card>
-<meta content=https://github.com/versai-network/versai-network.github.io/blob/master/img/versai.png name=twitter:image>
-<link href=css/home.css rel=preload as=style onload='this.onload=null,this.rel="stylesheet"'>
-<script defer src=js/particles.js></script>
-<script defer src=js/particle-loader.js></script>
-<link href=img/favicon.ico rel="shortcut icon" type=image/x-icon>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel=stylesheet>
-<link href=https://www.versai.pro rel=canonical>
-<meta content=igUqlsKqH2ZLp-iKXv8w4gaRUz06XJ5AjhtOAII2pqw name=google-site-verification>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Open Sans', sans-serif;
-        color: #696d72;
-        height: 100%;
-        background: linear-gradient(to top, #1e6cb6, #3498f5)
-    }
-    
-    p {
-        padding-bottom: 5%;
-        margin: 0;
-        font-size: 1.2em;
-        font-weight: 300;
-        line-height: 1.5em
-    }
-    
-    h1 {
-        font-size: 1.8em
-    }
-    
-    h2 {
-        font-size: 2em
-    }
-    
-    h1,
-    h2 {
-        color: #595a5b
-    }
-    
-    a {
-        color: #0ff
-    }
-    
-    .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap
-    }
-    
-    header h1 {
-        color: #fff;
-        padding-top: 50px
-    }
-    
-    .nav {
-        list-style: none;
-        display: flex
-    }
-    
-    .nav:not(:first-child) li {
-        margin-left: 20px
-    }
-    
-    .nav li {
-        text-transform: uppercase;
-        font-weight: 600
-    }
-    
-    .nav {
-        list-style: none;
-        display: flex
-    }
-    
-    .nav:not(:first-child) li {
-        margin-left: 20px
-    }
-    
-    .nav li {
-        text-transform: uppercase;
-        font-weight: 600;
-        border-radius: 5px
-    }
-    
-    .logo {
-        transition-duration: .5s
-    }
-    
-    .logo img {
-        width: 200px;
-        margin-left: 30px;
-        margin-top: 10px
-    }
-    
-    .logo:hover {
-        transform: scale(1.07)
-    }
-    
-    .nav {
-        padding: 18px 0 20px
-    }
-    
-    h1 {
-        color: #fff;
-        overflow: hidden
-    }
-    
-    h2 {
-        padding: 5% 0 0 5%;
-        height: fit-content;
-        font-size: 2em;
-        color: #595a5b
-    }
-    
-    .header {
-        color: #fff;
-        position: relative;
-        margin: 0 auto;
-        width: 100%;
-        text-align: center
-    }
-    
-    .header {
-        transition: all .2s ease-in-out
-    }
-    
-    body,
-    html {
-        max-width: 100%;
-        overflow-x: hidden
-    }
-    
-    h1 {
-        font-size: 3vmax
-    }
-    
-    .header a {
-        float: left;
-        color: #fff;
-        text-align: center;
-        padding: 12px;
-        text-decoration: none;
-        font-size: 18px;
-        line-height: 25px;
-        border-radius: 4px
-    }
-    
-    .panel {
-        background-color: #fff;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        margin: 0 auto;
-        position: relative;
-        margin-bottom: -52px
-    }
-    
-    ::-webkit-scrollbar {
-        display: none
-    }
-    
-    #parent {
-        height: 100%;
-        width: 100%;
-        overflow: hidden
-    }
-    
-    #child {
-        width: 100%;
-        height: 100%;
-        overflow-y: scroll;
-        padding-right: 17px;
-        box-sizing: content-box
-    }
-    
-    .main {
-        color: #fff;
-        position: relative;
-        margin: 0 auto;
-        width: 100%;
-        text-align: center
-    }
-    
-    .img {
-        transition: all .4s ease;
-        padding-bottom: 10px
-    }
-    
-    .img:hover {
-        transform: scale(1.05)
-    }
-    
-    .about-text {
-        padding-bottom: 15px
-    }
-    
-    .flex-container {
-        margin: 0 auto;
-        max-width: 1100px;
-        display: flex;
-        flex-wrap: wrap;
-        overflow: hidden;
-        border-radius: 25px
-    }
-    
-    a {
-        position: relative;
-        z-index: 3;
-        overflow: hidden;
-        margin: 0 auto
-    }
-    
-    .header {
-        flex: 1 0 auto;
-        word-break: break-all
-    }
-    
-    .split {
-        flex: 1 0 auto;
-        padding: 5px;
-        margin: 10px;
-        flex-basis: 250px
-    }
-    
-    .nav a {
-        font-size: 1.5vmax
-    }
-</style>
-<div id=particles-js></div>
-<div class=container>
-    <header>
-        <div class=header>
-            <div class=logo></div>
-            <ul class=nav>
-                <li><a href=./index.html>Home</a>
-                    <li><a href=https://forums.versai.pro>Forums</a>
-                        <li><a href=https://versai.buycraft.net>Store</a>
-                            <li><a href=https://discord.gg/aJx7qGK>Discord</a></ul>
-        </div>
-    </header>
-    <div class=main>
-        <h1 class=animate>Versai Network</h1>
-        <div class=flex-container>
-            <div class=split>
-                <a href=https://forums.versai.pro><img alt="Image of Forums icon" class=img src=img/forums.png></a>
-                <p>The Versai Forums are a place to talk openly about anything! You can apply for staff here as well as make suggestions.</div>
-            <div class=split>
-                <a href=https://versai.buycraft.net><img alt="Image of Store icon" class=img src=img/store.png></a>
-                <p>We are entirely non-profit and all money goes towards plugins and hosting, ranks are fair and allow you to stand out!</div>
-            <div class=split><a href=https://minecraftpocket-servers.com/server/76012/vote/><img alt="Image of Voting icon" class=img src=img/vote.png></a>
-                <p>Voting helps to boost our rank and increase the popularity of our server, voting results in a 24 hour Voter rank that gives you slightly better kits!</div>
-            <div class=split>
-                <a href=https://discord.gg/aJx7qGK><img alt="Discord Image" class=img src=img/discord.png></a>
-                <p>Chat with us, make friends, and get the most up to date announcements</div>
-            <div class=split>
-                <a href=https://twitter.com/VersaiPE><img alt="Discord Image" class=img src=img/twitter.png></a>
-                <p>Follow our twitter @VersaiPE</div>
-            <div class=split>
-                <a href="minecraft://?addExternalServer=§6 * Versai *|versai.pro:19132"><img alt="Discord Image" class=img src=img/versai.png></a>
-                <p>Click to add our server! Versai.pro:19132</div>
+<meta charset="utf-8">
+<meta content="Versai Network. Free to win practice server 1.2 Minecraft Bedrock." name="description">
+<meta content="Versai, Versai.pro, Minecraft Server, Minecraft, Fun, Play, Info, Website, Official, PvP, Hardcore, Practice, 1.2, Pocket, Bedrock" name="keywords">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta content="The best practice server for Minecraft BE 1.2" name="twitter:card">
+<meta content="https://github.com/versai-network/versai-network.github.io/blob/master/img/versai.png" name="twitter:image">
+<link href="css/home.css" rel="preload" as="style" onload='this.onload=null,this.rel="stylesheet"'>
+<script defer src="js/particles.js"></script><script defer src="js/particle-loader.js"></script><link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://www.versai.pro" rel="canonical">
+<meta content="igUqlsKqH2ZLp-iKXv8w4gaRUz06XJ5AjhtOAII2pqw" name="google-site-verification">
+</head>
+<body style="margin:0;font-family:'Open Sans', sans-serif;color:#696d72;height:100%;background:linear-gradient(to top, #1e6cb6, #3498f5);max-width:100%;overflow-x:hidden;">
+<div id="particles-js"></div>
+<div class="container">
+    <header><div class="header" style="display:flex;justify-content:center;align-items:center;flex-wrap:wrap;color:#fff;position:relative;margin:0 auto;width:100%;text-align:center;transition:all .2s ease-in-out;flex:1 0 auto;word-break:break-all;">
+            <div class="logo" style="transition-duration:.5s;"></div>
+            <ul class="nav" style="list-style:none;display:flex;padding:18px 0 20px 0;">
+<li style="text-transform:uppercase;font-weight:600;border-radius:5px;">
+<a href="./index.html" style="color:#fff;position:relative;z-index:3;overflow:hidden;margin:0 auto;float:left;text-align:center;padding:12px;text-decoration:none;font-size:1.5vmax;line-height:25px;border-radius:4px;">Home</a>
+                    </li>
+<li style="text-transform:uppercase;font-weight:600;border-radius:5px;">
+<a href="https://forums.versai.pro" style="color:#fff;position:relative;z-index:3;overflow:hidden;margin:0 auto;float:left;text-align:center;padding:12px;text-decoration:none;font-size:1.5vmax;line-height:25px;border-radius:4px;">Forums</a>
+                        </li>
+<li style="text-transform:uppercase;font-weight:600;border-radius:5px;">
+<a href="https://versai.buycraft.net" style="color:#fff;position:relative;z-index:3;overflow:hidden;margin:0 auto;float:left;text-align:center;padding:12px;text-decoration:none;font-size:1.5vmax;line-height:25px;border-radius:4px;">Store</a>
+                            </li>
+<li style="text-transform:uppercase;font-weight:600;border-radius:5px;"><a href="https://discord.gg/aJx7qGK" style="color:#fff;position:relative;z-index:3;overflow:hidden;margin:0 auto;float:left;text-align:center;padding:12px;text-decoration:none;font-size:1.5vmax;line-height:25px;border-radius:4px;">Discord</a></li>
+</ul>
+</div>
+    </header><div class="main" style="color:#fff;position:relative;margin:0 auto;width:100%;text-align:center;">
+        <h1 class="animate" style="font-size:4em;color:#fff;overflow:hidden;">Versai Network</h1>
+        <div class="flex-container" style="margin:0 auto;max-width:1100px;display:flex;flex-wrap:wrap;overflow:hidden;border-radius:25px;">
+            <div class="split" style="flex:1 0 auto;padding:5px;margin:10px;flex-basis:250px;">
+                <a href="https://forums.versai.pro" style="color:cyan;position:relative;z-index:3;overflow:hidden;margin:0 auto;"><img alt="Image of Forums icon" class="img" src="img/forums.png" style="transition:all .4s ease;padding-bottom:10px;"></a>
+                <p style="padding-bottom:5%;margin:0;font-size:1.2em;font-weight:300;line-height:1.5em;">The Versai Forums are a place to talk openly about anything! You can apply for staff here as well as make suggestions.</p>
+</div>
+            <div class="split" style="flex:1 0 auto;padding:5px;margin:10px;flex-basis:250px;">
+                <a href="https://versai.buycraft.net" style="color:cyan;position:relative;z-index:3;overflow:hidden;margin:0 auto;"><img alt="Image of Store icon" class="img" src="img/store.png" style="transition:all .4s ease;padding-bottom:10px;"></a>
+                <p style="padding-bottom:5%;margin:0;font-size:1.2em;font-weight:300;line-height:1.5em;">We are entirely non-profit and all money goes towards plugins and hosting, ranks are fair and allow you to stand out!</p>
+</div>
+            <div class="split" style="flex:1 0 auto;padding:5px;margin:10px;flex-basis:250px;">
+<a href="https://minecraftpocket-servers.com/server/76012/vote/" style="color:cyan;position:relative;z-index:3;overflow:hidden;margin:0 auto;"><img alt="Image of Voting icon" class="img" src="img/vote.png" style="transition:all .4s ease;padding-bottom:10px;"></a>
+                <p style="padding-bottom:5%;margin:0;font-size:1.2em;font-weight:300;line-height:1.5em;">Voting helps to boost our rank and increase the popularity of our server, voting results in a 24 hour Voter rank that gives you slightly better kits!</p>
+</div>
+            <div class="split" style="flex:1 0 auto;padding:5px;margin:10px;flex-basis:250px;">
+                <a href="https://discord.gg/aJx7qGK" style="color:cyan;position:relative;z-index:3;overflow:hidden;margin:0 auto;"><img alt="Discord Image" class="img" src="img/discord.png" style="transition:all .4s ease;padding-bottom:10px;"></a>
+                <p style="padding-bottom:5%;margin:0;font-size:1.2em;font-weight:300;line-height:1.5em;">Chat with us, make friends, and get the most up to date announcements</p>
+</div>
+            <div class="split" style="flex:1 0 auto;padding:5px;margin:10px;flex-basis:250px;">
+                <a href="https://twitter.com/VersaiPE" style="color:cyan;position:relative;z-index:3;overflow:hidden;margin:0 auto;"><img alt="Discord Image" class="img" src="img/twitter.png" style="transition:all .4s ease;padding-bottom:10px;"></a>
+                <p style="padding-bottom:5%;margin:0;font-size:1.2em;font-weight:300;line-height:1.5em;">Follow our twitter @VersaiPE</p>
+</div>
+            <div class="split" style="flex:1 0 auto;padding:5px;margin:10px;flex-basis:250px;">
+                <a href="minecraft://?addExternalServer=%C2%A76%20*%20Versai%20*%7Cversai.pro:19132" style="color:cyan;position:relative;z-index:3;overflow:hidden;margin:0 auto;"><img alt="Discord Image" class="img" src="img/versai.png" style="transition:all .4s ease;padding-bottom:10px;"></a>
+                <p style="padding-bottom:5%;margin:0;font-size:1.2em;font-weight:300;line-height:1.5em;">Click to add our server! Versai.pro:19132</p>
+</div>
         </div>
     </div>
 </div>
-<div class=panel>
-    <div class=main-content>
-        <section class="bg-about intro" id=about>
-            <div class=container>
-                <div class=row>
+<div class="panel" style="background-color:#fff;width:100%;height:100%;text-align:center;margin:0 auto;position:relative;margin-bottom:-52px;">
+    <div class="main-content">
+        <section class="bg-about intro" id="about"><div class="container">
+                <div class="row">
                     <div class="section-minfox text-center">
-                        <h2 style=text-align:center>About</h2></div>
+                        <h2 style="text-align:center;font-size:2em;color:#595a5b;padding:5% 0 0 5%;height:fit-content;">About</h2>
+</div>
                     <div class="about text-center;">
-                        <p>We are a Minecraft Bedrock Edition 1.2 practice server. We are a play to win server, purchasable ranks give you slight benefits as well as pay for our hosting and custom plugins. We are also making a faction server, it will be slightly pay to win, in order to fund both servers. The Versai Network does not plan to profit ever, we'd just like to balance hosting costs with income, and spend the rest on making Versai an even better server for you!</div>
+                        <p style="padding-bottom:5%;margin:0;font-size:1.2em;font-weight:300;line-height:1.5em;">We are a Minecraft Bedrock Edition 1.2 practice server. We are a play to win server, purchasable ranks give you slight benefits as well as pay for our hosting and custom plugins. We are also making a faction server, it will be slightly pay to win, in order to fund both servers. The Versai Network does not plan to profit ever, we'd just like to balance hosting costs with income, and spend the rest on making Versai an even better server for you!</p>
+</div>
                 </div>
             </div>
         </section>
-    </div>
 </div>
-<footer>
-    <p>Copyright © Versai 2018</footer>
-<script type=application/ld+json>{ "@context" : "http://schema.org", "@type" : "Server", "name" : "Versai", "datePublished" : "2018-05-12", "applicationCategory" : [ "Minecraft", "server", "mcpe", "pocket", "pvp" ] }</script>
+</div>
+<footer style="background-color: #595a5b;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    width: 100%"><p style="padding-bottom:5%;margin:0;font-size:1.2em;font-weight:300;line-height:1.5em;padding:0 0 0 30px;">Copyright &copy; Versai 2018</p></footer><script type="application/ld+json">{ "@context" : "http://schema.org", "@type" : "Server", "name" : "Versai", "datePublished" : "2018-05-12", "applicationCategory" : [ "Minecraft", "server", "mcpe", "pocket", "pvp" ] }</script>
+</body>
 </html>
